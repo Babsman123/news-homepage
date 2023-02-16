@@ -1,0 +1,13 @@
+.u-margin-big {
+  margin-bottom: 2rem;
+}
+.u-border-bottom {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 425px) {
+  .u-margin-big {
+    margin-bottom: 5rem;
+  }
+}

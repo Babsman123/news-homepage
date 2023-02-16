@@ -1,0 +1,142 @@
+body {
+  line-height: 1.7;
+  font-family: "Red Hat Display", sans-serif;
+}
+.header {
+  padding: 3rem;
+
+  &--nav {
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    img {
+      float: right;
+      cursor: pointer;
+    }
+    ul {
+      margin-top: 7rem;
+      li {
+        list-style: none;
+        padding: 1.2rem 0;
+        a {
+          text-decoration: none;
+          font-size: 1.8rem;
+          color: $color-text-head;
+        }
+      }
+    }
+  }
+}
+.open-nav {
+  transform: translateX(0);
+}
+.page-content {
+  &--img {
+    animation: moveInRight 2s ease-out;
+  }
+  .btn {
+    animation: moveInBottom 2s ease-out;
+  }
+  .page-content__news {
+    animation: moveInLeft 2s ease-out;
+  }
+}
+.heading-primary {
+  h1 {
+    font-size: 5.5rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+  }
+}
+.heading-sub {
+  .para {
+    font-size: 1.8rem;
+    margin: 3rem 0;
+  }
+}
+.page-content__news {
+  h2 {
+    color: $color-news;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .page-content__letter {
+    h3 {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: $color-white;
+    }
+    p {
+      color: hsl(233, 8%, 79%);
+      font-size: 1.3rem;
+    }
+  }
+}
+.page-types {
+  .page-types-1 {
+    animation: moveInBottom1 2s ease-out;
+  }
+  .page-types-2 {
+    animation: moveInBottom2 2s ease-out;
+  }
+  .page-types-3 {
+    animation: moveInBottom3 2s ease-out;
+  }
+  .page-types__content {
+    margin-left: 10px;
+    h2 {
+      color: $color-text-num;
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      color: $color-bg-blue;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $color-text-num;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .header {
+    padding: 3rem;
+
+    &--nav {
+      padding: 0;
+      transform: translateX(0);
+      img {
+        display: none;
+      }
+      ul {
+        margin-top: 0;
+        li {
+          list-style: none;
+          padding: 1.2rem 2rem;
+          a {
+            text-decoration: none;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .heading-primary {
+    h1 {
+      font-size: 5rem;
+      font-weight: bolder;
+      margin: 1rem 0;
+    }
+  }
+  .heading-sub {
+    .para {
+      font-size: 1.8rem;
+      margin: 3rem 0;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}

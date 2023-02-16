@@ -1,0 +1,294 @@
+.u-margin-big {
+  margin-bottom: 2rem; }
+
+.u-border-bottom {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white; }
+
+@media (min-width: 425px) {
+  .u-margin-big {
+    margin-bottom: 5rem; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom1 {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom2 {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom3 {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+main {
+  padding: 10rem 1rem; }
+
+.col-2-of-3 {
+  display: flex;
+  flex-direction: column; }
+
+.page-content--img .img-desktop {
+  display: none; }
+
+.page-types__retro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+@media (min-width: 425px) {
+  .col-2-of-3 .page-content--text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .col-2-of-3 .page-content--text .heading-sub {
+      width: 70%; }
+  .page-content--img .img-mobile {
+    display: none; }
+  .page-content--img .img-desktop {
+    display: block; } }
+
+body {
+  line-height: 1.7;
+  font-family: "Red Hat Display", sans-serif; }
+
+.header {
+  padding: 3rem; }
+  .header--nav {
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out; }
+    .header--nav img {
+      float: right;
+      cursor: pointer; }
+    .header--nav ul {
+      margin-top: 7rem; }
+      .header--nav ul li {
+        list-style: none;
+        padding: 1.2rem 0; }
+        .header--nav ul li a {
+          text-decoration: none;
+          font-size: 1.8rem;
+          color: #5d5f79; }
+
+.open-nav {
+  transform: translateX(0); }
+
+.page-content--img {
+  animation: moveInRight 2s ease-out; }
+
+.page-content .btn {
+  animation: moveInBottom 2s ease-out; }
+
+.page-content .page-content__news {
+  animation: moveInLeft 2s ease-out; }
+
+.heading-primary h1 {
+  font-size: 5.5rem;
+  font-weight: bolder;
+  margin: 1rem 0; }
+
+.heading-sub .para {
+  font-size: 1.8rem;
+  margin: 3rem 0; }
+
+.page-content__news h2 {
+  color: #e9ab53;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.page-content__news .page-content__letter h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #fffdfa; }
+
+.page-content__news .page-content__letter p {
+  color: #c5c6ce;
+  font-size: 1.3rem; }
+
+.page-types .page-types-1 {
+  animation: moveInBottom1 2s ease-out; }
+
+.page-types .page-types-2 {
+  animation: moveInBottom2 2s ease-out; }
+
+.page-types .page-types-3 {
+  animation: moveInBottom3 2s ease-out; }
+
+.page-types .page-types__content {
+  margin-left: 10px; }
+  .page-types .page-types__content h2 {
+    color: #c5c6ce;
+    font-size: 3rem; }
+  .page-types .page-types__content h3 {
+    font-size: 1.3rem;
+    color: #00001a; }
+  .page-types .page-types__content p {
+    font-size: 1.2rem;
+    color: #c5c6ce; }
+
+@media (min-width: 425px) {
+  .header {
+    padding: 3rem; }
+    .header--nav {
+      padding: 0;
+      transform: translateX(0); }
+      .header--nav img {
+        display: none; }
+      .header--nav ul {
+        margin-top: 0; }
+        .header--nav ul li {
+          list-style: none;
+          padding: 1.2rem 2rem; }
+          .header--nav ul li a {
+            text-decoration: none;
+            font-size: 1.8rem; }
+  .heading-primary h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 1rem 0; }
+  .heading-sub .para {
+    font-size: 1.8rem;
+    margin: 3rem 0; }
+    .heading-sub .para span {
+      display: block; } }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f15e50;
+  color: #fffdfa;
+  display: inline-block;
+  padding: 1.4rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-out; }
+
+.btn:hover {
+  transform: translateY(-0.8rem); }
+
+.btn:active {
+  transform: translateY(-0.4rem); }
+
+@media (min-width: 425px) {
+  .row {
+    max-width: 114rem;
+    margin: 0 auto; }
+  ::after {
+    content: "";
+    clear: both;
+    display: table; }
+  [class^="col-"] {
+    float: left; }
+    [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 2rem) / 3) + 2rem); } }
+
+.header {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  background-color: #fffdfa; }
+  .header__menu {
+    cursor: pointer; }
+  .header--nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fffdfa;
+    width: 60%;
+    height: 90vh; }
+
+@media (min-width: 425px) {
+  .header__menu {
+    display: none; }
+  .header--nav {
+    height: inherit;
+    position: absolute; }
+    .header--nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      margin: 1.5rem 0; } }
+
+.page-content {
+  height: 100%; }
+  .page-content--img img {
+    width: 100%;
+    height: 10%; }
+  .page-content__news {
+    background-color: #00001a;
+    padding: 2rem 3rem;
+    margin: 2rem 0; }
+
+.page-types {
+  height: inherit; }
+  .page-types__img img {
+    width: 15rem;
+    height: 15rem; }
+
+@media (min-width: 425px) {
+  .page-content__news {
+    background-color: #00001a;
+    padding: 3rem 3rem;
+    margin: 0rem 0; } }

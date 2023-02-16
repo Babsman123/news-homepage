@@ -1,0 +1,40 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  background-color: $color-white;
+
+  &__menu {
+    cursor: pointer;
+  }
+
+  &--nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $color-white;
+    width: 60%;
+    height: 90vh;
+  }
+}
+
+@media (min-width: 425px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &--nav {
+      height: inherit;
+      position: absolute;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}

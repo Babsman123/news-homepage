@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue&family=Fraunces:opsz@9..144&family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./assets/images/logo.svg" alt="logo" class="header_logo" />
+      </div>
+      <img
+        src="./assets/images/icon-menu.svg"
+        alt="menu"
+        class="header__menu"
+      />
+      <nav class="header--nav">
+        <img
+          src="./assets/images/icon-menu-close.svg"
+          alt="menu-close"
+          class="menu-close"
+        />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-content">
+        <div class="row">
+          <div class="col-2-of-3">
+            <div class="page-content--img">
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="image-web-3"
+                class="img-mobile"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="image-web-3"
+                class="img-desktop"
+                loading="lazy"
+              />
+            </div>
+            <div class="page-content--text">
+              <div class="heading-primary">
+                <h1>The Bright <span>Future of</span> Web 3.0?</h1>
+              </div>
+              <div class="heading-sub">
+                <p class="para">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+
+                <a href="#" class="btn btn-animation">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="page-content__news">
+              <h2 class="u-margin-big">New</h2>
+
+              <div class="page-content__letter">
+                <div
+                  class="page-content__electric u-margin-big u-border-bottom"
+                >
+                  <h3>Hydrogen VS Electric Cars</h3>
+                  <p class="paragraph">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                  </p>
+                </div>
+                <div class="page-content__ai u-margin-big u-border-bottom">
+                  <h3>The Downsides of AI Artistry</h3>
+                  <p class="paragraph">
+                    What are the possible adverse effects of on-demand AI image
+                    generation?
+                  </p>
+                </div>
+                <div class="page-content__fund u-margin-big">
+                  <h3>Is VC Funding Drying Up?</h3>
+                  <p class="paragraph">
+                    Private funding by VC firms is down 50% YOY. We take a look
+                    at what that means.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-types">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="page-types__retro page-types-1 u-margin-big">
+              <div class="page-types__img">
+                <img
+                  src="./assets/images/image-retro-pcs.jpg"
+                  alt="retro-pcs"
+                  loading="lazy"
+                />
+              </div>
+              <div class="page-types__content">
+                <h2>01</h2>
+                <h3>Reviving Retro PCs</h3>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="page-types__retro page-types-2 u-margin-big">
+              <div class="page-types__img">
+                <img
+                  src="./assets/images/image-top-laptops.jpg"
+                  alt="retro-pcs"
+                  loading="lazy"
+                />
+              </div>
+              <div class="page-types__content">
+                <h2>02</h2>
+                <h3>Top 10 Laptops of 2022</h3>
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="page-types__retro page-types-3">
+              <div class="page-types__img">
+                <img
+                  src="./assets/images/image-gaming-growth.jpg"
+                  alt="retro-pcs"
+                  loading="lazy"
+                />
+              </div>
+              <div class="page-types__content">
+                <h2>03</h2>
+                <h3>The Growth of Gaming</h3>
+                <p>How the pandemic has sparked fresh opportunities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--
+    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
+    into the next evolution of the web that claims to put the power of the
+    platforms back into the hands of the people. But is it really fulfilling its
+    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
+    ever catch up to EVs? The Downsides of AI Artistry What are the possible
+    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
+    Private funding by VC firms is down 50% YOY. We take a look at what that
+    means. 01 Reviving Retro PCs What happens when old PCs are given modern
+    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
+    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
+    opportunities.-->
+    <script src="./script/index.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tunde Adelani</a>.
+    </div>
+  </body>
+</html>
